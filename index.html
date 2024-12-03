@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sen:wght@400..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+		.sen-sen {
+        font-family: "Sen", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .inter-inter {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        }
+		
+		/* ------------------------------------------------------------------------------------- */
+		
+		.container {
+			margin-top: 160px;
+			margin-left: 189px;
+			display: flex;
+			align-items: flex-start;
+		}
+
+		.about-section {
+			background-color: white;
+			width: 624px;
+			height: 356px;
+			padding: 20px;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+
+		.about_us {
+			font-family: "Inter", sans-serif;
+			font-size: 16px;
+			color: #232536;
+			width: 104px;
+			height: 20px;
+			margin-bottom: 16px;
+		}
+
+		.we_are_team {
+			font-family: "Sen", sans-serif;
+			font-size: 48px;
+			color: #232536;
+			width: 496px;
+			height: 192px;
+			margin-top: 0px;
+		}
+
+		.lorem_ipsum {
+			font-family: "Inter", sans-serif;
+			font-size: 16px;
+			line-height: 28px;
+			color: #4C4C4C;
+			width: 477px;
+			height: 112px;
+			margin-left: 20px;
+			margin-top: 104px;
+		}
+		
+		/******************************************************/
+		
+		.overview-container {
+			background-image: url('image.png');
+			background-size: cover; /* Масштабируем картинку, чтобы она заполнила контейнер */
+            background-position: center; /* Центрируем картинку */
+            background-repeat: no-repeat; /* Не повторяем картинку */
+			width: 1280px;
+			height: 444px;
+			margin-left: 80px;
+			margin-top: -60px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+		.overview1{
+			width: 630px;
+			height: 156px;
+			margin-left: 109px;
+			margin-top: 265px;
+			background-color: #FFD050;
+			display: flex;
+			flex-direction: rows;
+			justify-content: space-arround;
+			padding: 10px;
+		}
+		.overview1-content{
+			width: 142px;
+			height: 92px;
+			margin-top: 32px;
+			margin-left: 48px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+		.overview1-content h1{
+			font-family: "Sen", sans-serif;
+			font-size: 56px;
+			color: #232536;
+			margin-bottom: 0px; 
+		}
+		.overview1-content p{
+			font-family: "Inter", sans-serif;
+			font-size: 16px;
+			color: #232536;
+			margin-top: 0px;
+		}
+		.overview2{
+			display: flex;
+			flex-direction: rows;
+			margin-left: 109px;
+			
+		}
+		.overview2-shape1{
+			width: 312px;
+			height: 23px;
+			background-color: #592EA9;
+		}
+		.overview2-shape2{
+			width: 550px;
+			height: 23px;
+			background-color: #FFD050;
+		}
+		
+		/******************************************************/
+		
+		.mission-vision-container{
+			width: 1280px;
+			height: 441px;
+			margin-left: 80px;
+			display: flex;
+			flex-direction: rows;
+			justify-content: center;
+			background-color: #F4F0F8;
+		}
+		.mission-vision-content{
+			width: 516px;
+			height: 249px;
+			margin-left: 30px;
+			margin-right: 30px;
+			margin-top: 140px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+		.mission-vision-content p{
+			font-family: "Sen", sans-serif;
+			font-size: 16px;
+			color: #232536;
+			margin-bottom: 0px;
+			margin-top: 10px;
+		}
+		.mission-vision-content h1{
+			margin-top: 30px;
+			font-family: "Inter", sans-serif;
+			font-size: 28px;
+			color: #232536;
+		}
+		
+		/******************************************************/
+		
+		.know-more-container{
+			width: 1280px;
+			height: 480px;
+			margin-top: 128px;
+			margin-left: 80px;
+			display: flex;
+			flex-direction: row;
+			
+		}
+		.know-more-content1{
+			width: 519px;
+			height: 316px;
+			display: flex;
+			flex-direction: column;
+			margin-top: 45px;
+		}
+		.know-more-content1 h2{
+			font-family: "Sen", sans-serif;
+			font-size: 36px;
+			line-height: 48px;
+			color: #232536;
+			margin-bottom: 15px;
+		}
+		.know-more-content1 h4{
+			font-family: "Sen", sans-serif;
+			font-size: 24px;
+			line-height: 32px;
+			color: #232536;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+		.know-more-content1 p{
+			font-family: "Inter", sans-serif;
+			font-size: 16px;
+			line-height: 28px;
+			color: #232536;
+			margin-top: 10px;
+		}
+		.know-more-content2{
+			width: 624px;
+			height: 480px;
+			display: flex;
+			flex-direction: rows;
+			margin-left: 130px;
+			background-image: url("ground-group-growth-hands-461049.png");
+			background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+		}
+		.know-more-content3{
+			width: 624px;
+			height: 480px;
+			display: flex;
+			flex-direction: column;
+			background-image: url("three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.png");
+			background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+			position: relative;
+			margin-right: 64px;
+		}
+		.rounded-rectangle {
+            width: 103px;
+            height: 116px;
+            background-color: #FFD050;
+            border-top-left-radius: 40px;
+			margin-top: 114px;
+			margin-left: -54px;
+        }
+		.circle {
+            width: 74px;
+            height: 74px;
+            background-color: #592EA9;
+            border-radius: 50%;
+            position: absolute;
+            top: calc(100% - 37px);
+            left: 107px;
+        }
+		
+		/******************************************************/
+		
+		.authors-container {
+			width: 1280px;
+			height: 776px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+			margin-left: 80px;
+			margin-right: 80px;
+			margin-top: 48px;
+        }
+        .authors-content {
+            width: calc(25% - 40px);
+            height: 324px;
+            background-color: #F4F4F4;
+            display: flex;
+			flex-direction: column;
+            justify-content: center;
+            align-items: center;
+			padding: 20px;
+			box-sizing: border-box;
+        }
+		.authors-content-img{
+			width: 128px;
+			height: 128px;
+			margin-bottom: 20px;
+		}
+		.authors-content ul {
+            list-style: none;
+            display: flex;
+			width: 112px;
+			height: 16px;
+            gap: 10px;
+            padding: 0%;
+			margin: 15px 0;
+        }
+		.authors-content h3{
+			font-family: "Sen", sans-serif;
+			font-size: 28px;
+			line-height: 40px;
+			color: #232536;
+			margin: 0px 0;
+		}
+		.authors-content p{
+			font-family: "Inter", sans-serif;
+			font-size: 14px;
+			line-height: 20px;
+			color: #6D6E76;
+			margin: 0px 0;
+		}
+		
+		/******************************************************/
+		
+		.join-container{
+			width: 414px;
+			height: 256px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 128px 513px 128px;
+			gap: 16px;
+		}
+		.join-container h2{
+			font-family: "Sen", sans-serif;
+			font-size: 36px;
+			line-height: 48px;
+			color: #232536;
+			text-align: center;
+			margin-bottom: 0px;
+		}
+		.join-container p{
+			font-family: "Inter", sans-serif;
+			font-size: 16px;
+			line-height: 28px;
+			color: #6D6E76;
+			text-align: center;
+		}
+		.simple-button {
+			width: 87px;
+			height: 56px;
+			margin-left: 40px;
+            background-color: #FFD050;
+            border: none;
+            color: #232536;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+			font-family: "Sen", san-serif;
+            font-size: 18px;
+			font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+			align-self: center;
+        }
+		/* ------------------------------------------------------------------------------------- */
+		
+        header {
+            display: flex;
+            background-color: #232536;
+            height: 80px;
+            width: 1440px;
+        }
+        .icon {
+            display: flex;
+            margin-left: 83px;
+            margin-top: 25px;
+            margin-bottom: 26.65px;
+            height: 28.35px;
+            width: 140px;
+        }
+        .navigation {
+            margin-left: 621px;
+            margin-top: 26px;
+            margin-bottom: 25px;
+            width: 305px;
+            height: 29px;
+            display: flex;
+            align-items: center;
+        }
+        .navigation ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            margin: 0px;
+            padding: 0%;
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0px;
+        }
+        li {
+            white-space: nowrap;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+        }
+        .btnheader {
+            font-family: Sen;
+            width: 179px;
+            height: 56px;
+            margin-top: 12px;
+            margin-left: 32px;
+            color: #232536;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            background-color: #FFFFFF;
+            border: 0;
+        }
+		h2 {
+            font-family: Sen;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -2px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #232536;
+        }
+        .body1 {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #6D6E76;
+        }
+        .categories .body1 {
+            margin-top: 4px;
+            margin-left: 32px;
+            width: 232px;
+            height: 56px;
+        }
+        .ourteam {
+            width: 414px;
+            height: 256px;
+            margin-left: 513px;
+            margin-top: 128px;
+            text-align: center;
+            justify-content: center;
+        }
+        .ourteam .body1 {
+            text-align: center;
+            margin-top: 16px;
+        }
+        footer {
+            width: 1440px;
+            height: 550px;
+            margin-top: 128px;
+            background-color: #232536;
+            display: flex;
+        }
+        footer main {
+            width: 1280px;
+            height: 445px;
+            margin-top: 59px;
+            margin-left: 80px;
+        }
+        .iconfooter {
+            width: 140px;
+            height: 28.35px;
+        }
+        footer .navigation {
+            margin: 0;
+            margin-top: 0px;
+            margin-left: 703px;
+            padding: 0;
+        }
+        footer .upper {
+            display: flex;
+        }
+        .sub {
+            width: 1280px;
+            height: 256px;
+            background-color: #2e3040;
+            margin-top: 54.65px;
+            display: flex;
+            border: 1px solid #2e3040;
+            
+        }
+        .sub h2 {
+            width: 562px;
+            height: 96px;
+            margin-left: 64px;
+            margin-top: 80px;
+            color: #FFFFFF;
+        }
+        input {
+            background: transparent;
+            width: 323px;
+            height: 54px;
+            margin-top: 84px;
+            margin-left: 64px;
+            border: 1px solid #4C4C4C;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        input::placeholder {
+            padding-left: 24.92px;
+        }
+        footer button {
+            padding: 0;
+            width: 179px;
+            height: 56px;
+            border: 0;
+            background-color: #FFD050;
+            color: #232536;
+            font-family: Sen;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            text-align: center;
+            margin-top: 84px;
+            margin-left: 24px;
+        }
+        footer .lower {
+            display: flex;
+        }
+        footer .body1 {
+            font-style: normal;
+            margin-top: 48px;
+        }
+        footer ul {
+            list-style: none;
+            display: flex;
+            gap: 26.67px;
+            margin-left: 775px;
+            margin-top: 60px;
+            padding: 0%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="icon" src="Logo.svg" alt="Логотип">
+        <nav class="navigation">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+          <button class="btnheader">Subscribe</button>
+    </header>
+    <div class="container">
+        <div class="about-section">
+            <p class="about_us">ABOUT US</p>
+            <h1 class="we_are_team">We are a team of content writers who share their learnings</h1>
+        </div>
+        <p class="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+	
+	<div class="overview-container">
+		<div class="overview1">
+			<div class="overview1-content">
+				<h1>12+</h1>
+				<p>Blogs Published</p>
+			</div>
+			<div class="overview1-content">
+				<h1>18K+</h1>
+				<p>Views on Finsweet</p>
+			</div>
+			<div class="overview1-content">
+				<h1>30K+</h1>
+				<p>Total active Users</p>
+			</div>
+		</div>
+		<div class="overview2">
+			<div class="overview2-shape1"></div>
+			<div class="overview2-shape2"></div>
+		</div>
+	</div>
+	
+	<div class="mission-vision-container">
+			<div class="mission-vision-content">
+				<p>OUR MISION</p>
+				<h1>Creating valuable content for creatives all around the world</h1>
+				<p style="color: #6D6E76; line-height: 28px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+			</div>
+			<div class="mission-vision-content">
+				<p>OUR VISION</p>
+				<h1>A platform that empowers individuals to improve</h1>
+				<p style="color: #6D6E76; line-height: 28px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+			</div>
+		</div>
+		
+	<div class="know-more-container">
+		<div class="know-more-content1">
+			<h2>Our team of creatives</h2>
+			<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+		</div>
+		<div class="know-more-content2">
+			<div class="rounded-rectangle"></div>
+		</div>
+	</div>
+	
+	<div class="know-more-container">
+		<div class="know-more-content3">
+			<div class="circle"></div>
+		</div>
+		<div class="know-more-content1">
+			<h2>Why we started this Blog</h2>
+			<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+		</div>
+	</div>
+	
+	<h2 style="
+		width: 231px;
+		height: 48px;
+		font-family: Sen, sans-serif;
+		font-size: 36px;
+		line-height: 48px;
+		margin-left: 590px;
+		margin-right: 614px;
+		margin-top: 100px;
+	">List of Authors</h2>
+	
+	<div class="authors-container">
+		<div class="authors-content">
+			<img src="Icons\man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png" class="authors-content-img">
+			<h3>Floyd Miles</h3>
+			<p>Content Writer @Company</p>
+			<ul class="social-icons-1">
+                <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+			</ul>
+		</div>
+		<div class="authors-content" style="background-color: #FBF6EA;">
+				<img src="Icons\woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png" class="authors-content-img">
+			<h3>Dianne Russell</h3>
+			<p>Content Writer @Company</p>
+			<ul class="social-icons-1">
+                <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+			</ul>
+		</div>
+		<div class="authors-content">
+			<img src="Icons\fashion-woman-cute-shoes-5704849.png" class="authors-content-img">
+			<h3>Jenny Wilson</h3>
+			<p>Content Writer @Company</p>
+			<ul class="social-icons-1">
+                <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+			</ul>
+		</div>
+		<div class="authors-content">
+				<img src="Icons\content-baker-with-delicious-puff-in-cafeteria-6205509.png" class="authors-content-img">
+			<h3>Leslie Alexander</h3>
+			<p>Content Writer @Company</p>
+			<ul class="social-icons-1">
+                <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+			</ul>
+		</div>
+		<div class="authors-content">
+			<img src="Icons\aziat.png" class="authors-content-img">
+			<h3>Guy Hawkins</h3>
+			<p>Content Writer @Company</p>
+			<ul class="social-icons-1">
+                <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+			</ul>
+		</div>
+		<div class="authors-content">
+				<img src="Icons\woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083-1.png" class="authors-content-img">
+			<h3>Eleanor Pena</h3>
+			<p>Content Writer @Company</p>
+			<ul class="social-icons-1">
+                <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+			</ul>
+		</div>
+		<div class="authors-content">
+			<img src="Icons\content-unshaven-man-covering-eye-with-yellow-flower-5262459.png" class="authors-content-img">
+			<h3>Robert Fox</h3>
+			<p>Content Writer @Company</p>
+			<ul class="social-icons-1">
+                <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+			</ul>
+		</div>
+		<div class="authors-content">
+				<img src="Icons\cheerful-young-ethnic-male-millennial-standing-near-stone-wall-and-smiling-6147118.png" class="authors-content-img">
+			<h3>Jacob Jones</h3>
+			<p>Content Writer @Company</p>
+			<ul class="social-icons-1">
+                <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="join-container">
+		<h2>Join our team to be a part of our story</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+		<a href="#" class="simple-button">Join Now</a>
+	</div>
+	
+    </main>
+    <footer>
+        <main>
+            <section class="upper">
+                <img class="iconfooter" src="Logo.svg" alt="Логотип">
+                <nav class="navigation">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Privacy Police</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="sub">
+                <h2>Subscribe to our news letter to get latest updates and news</h2>
+                <input type="email" placeholder="Enter Your Email">
+                <button>Subscribe</button>
+            </section>
+            <section class="lower">
+                <address class="body1">
+                    Finstreet 118 2561 Fintown<br>
+                    Hello@finsweet.com  020 7993 2905
+                </address>
+                <ul class="social-icons-1">
+                    <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                    <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                    <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                    <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+                </ul>
+            </section>
+        </main>
+    </footer>
+</body>
+</html>
